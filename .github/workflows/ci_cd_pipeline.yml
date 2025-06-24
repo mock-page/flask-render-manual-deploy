@@ -35,3 +35,12 @@ jobs:
               # Step 5: Run the test
             - name: Run tests
               run: uv run pytest tests
+
+    # deploy:
+    #   needs: test
+    #   # Only run this step if the branch is main
+    #   if: github.ref == 'refs/heads/main'
+    #   runs-on: ubuntu-latest
+    #   steps:
+    #     - name: Trigger Render Deploy
+    #       run: curl -X POST ${{ secrets.RENDER_DEPLOY_HOOK_URL }}
