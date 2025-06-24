@@ -11,9 +11,9 @@ def marks():
     Physics=int(request.form['Physics'])
     Maths= int(request.form['Maths'])
     Chemistry = int(request.form['Chemistry'])
-    Hindi = int(request.form['Hindi'])
+    Tamil = int(request.form['Tamil'])
     English = int(request.form['English'])
-    result = Physics + Maths + Chemistry + Hindi + English
+    result = Physics + Maths + Chemistry + Tamil + English
     Percentage = result/5
     return render_template('home.html',Percentage=Percentage)
 
